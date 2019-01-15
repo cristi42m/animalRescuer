@@ -14,7 +14,7 @@ public class App {
         animal.hunger = 7;
         animal.happiness = 9;
         animal.favoriteFood = "mice";
-        animal.favoriteRecreationalActivity = "play with the ball";
+        animal.favoriteRecreationalActivity = "ball playing";
         animal.type = "cat";
         animal.sex = "male";
 
@@ -28,9 +28,26 @@ public class App {
         animalFood.name = "Purina";
         animalFood.price = 20;
         animalFood.quantity = 10;
-        System.out.println("numele animalului este:" + animal.name);
-        
+        animalFood.availability_in_stock = true;
 
+
+
+        RecreationalActivity recreationalActivity1 = new RecreationalActivity();
+        recreationalActivity1.name = "ball playing";
+        RecreationalActivity recreationalActivity2 = new RecreationalActivity();
+        recreationalActivity2.name = "playing with a laser";
+
+
+        Veterinarian veterinarian1 = new Veterinarian();
+        veterinarian1.name  = "John";
+        veterinarian1.specialization = "cat specialist";
+
+
+        System.out.println("Animal name is " + animal.name + ", it is a " + animal.sex +" "+ animal.type +  "!");
+        System.out.println(animal.name + " status: health level: " + animal.health + ", hunger level: " + animal.hunger +
+                ", happiness level: " + animal.happiness + ", favourite food: " + animal.favoriteFood + "!");;
+        System.out.println(animal.name + " is " + animal.age + " year old, and his favourite activity is "
+                + animal.favoriteRecreationalActivity + "!");
 
 
     }
