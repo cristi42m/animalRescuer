@@ -20,7 +20,7 @@ public class App {
 
 
         Adopter adopter = new Adopter();
-        adopter.name = "Ana";
+        adopter.name = "Maria";
         adopter.money_available = 100;
 
 
@@ -43,11 +43,12 @@ public class App {
         veterinarian1.specialization = "cat specialist";
 
 
-        System.out.println("Animal name is " + animal.name + ", it is a " + animal.sex +" "+ animal.type +  "!");
-        System.out.println(animal.name + " status: health level: " + animal.health + ", hunger level: " + animal.hunger +
-                ", happiness level: " + animal.happiness + ", favourite food: " + animal.favoriteFood + "!");;
-        System.out.println(animal.name + " is " + animal.age + " year old, and his favourite activity is "
-                + animal.favoriteRecreationalActivity + "!");
+
+     System.out.println("Animal name is " + animal.name + ", it is a " + animal.sex +" "+ animal.type +  "!");
+     System.out.println(animal.name + " status: health level: " + animal.health + ", hunger level: " + animal.hunger +
+             ", happiness level: " + animal.happiness + ", favourite food: " + animal.favoriteFood + "!");;
+     System.out.println(animal.name + " is " + animal.age + " year old, and his favourite activity is "
+             + animal.favoriteRecreationalActivity + "!");
 
 
     }
