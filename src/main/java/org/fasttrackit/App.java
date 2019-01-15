@@ -29,6 +29,7 @@ public class App {
         animalFood.price = 20;
         animalFood.quantity = 10;
         System.out.println("numele animalului este:" + animal.name);
+        System.out.println("varsta animalului este:" + animal.age);
 
 
 
