@@ -1,5 +1,5 @@
 package org.fasttrackit;
 
-public class Fish {
+public class Fish extends Animal{
 
 }
