@@ -9,14 +9,18 @@ import java.time.LocalDateTime;
 public class App {
     public static void main(String[] args) {
 
-        Animal animal = new Animal("Tequila",1,10,7,9,"mice","ball playing","cat","male");
+        Animal animal = new Animal("Tequila",1,10,7,9,"mice",
+                "ball playing","cat","male");
 
 
 
 
-        Adopter adopter = new Adopter();
-        adopter.name = "Maria";
-        adopter.money_available = 100;
+
+
+
+        Adopter adopter = new Adopter("Maria","female",100);
+        System.out.println(adopter.getName() + " bought a new animal!");
+
 
 
 
@@ -35,16 +39,17 @@ public class App {
         Veterinarian veterinarian2 = new Veterinarian("Samantha","Dog specialist");
 
 
-        System.out.println("Animal name is " + animal.name + ", it is a " + animal.sex +" "+ animal.type +  "!");
 
-        System.out.println(animal.name + " status: health level: " + animal.health + ", hunger level: " + animal.hunger +
-             ", happiness level: " + animal.happiness + ", favourite food: " + animal.favoriteFood + "!");
 
-        System.out.println(animal.name + " is " + animal.age + " year old, and his favourite activity is "
-             + animal.favoriteRecreationalActivity + "!");
+        System.out.println("Animal name is " + animal.getName() + ", it is a " + animal.getSex() +" "+ animal.getType() +  "!");
+
+        System.out.println(animal.getName() + " status: health level: " + animal.getHealth() + ", hunger level: " + animal.getHunger() +
+                ", happiness level: " + animal.getHappiness() + ", favourite food: " + animal.getFavoriteFood() + "!");
+
+        System.out.println(animal.getName() + " is " + animal.getAge() + " year old, and his favourite activity is "
+                + animal.getFavoriteRecreationalActivity() + "!");
 
         System.out.println("Expiry date of Purina cat food is " + animalFood.expiryDate);
-
 
     }
 
