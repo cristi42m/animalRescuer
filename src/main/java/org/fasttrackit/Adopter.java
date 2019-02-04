@@ -12,6 +12,18 @@ public class Adopter {
         this.money_available = money_available;
     }
 
+
+    public void  feeding ( String Animal, String AnimalFood){
+        System.out.println(this.getName() + " just gave some " + AnimalFood + " to " + Animal +"!");
+    }
+
+
+    public void playing ( String Animal, String RecreationalActivity){
+        System.out.println(this.getName () +  " took " +  Animal + " for a " + RecreationalActivity + " !");
+    }
+
+
+
     public String getName() {
         return name;
     }

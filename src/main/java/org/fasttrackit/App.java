@@ -9,10 +9,15 @@ import java.time.LocalDateTime;
 public class App {
     public static void main(String[] args) {
 
+
+
+
+
         Animal animal = new Animal("Tequila",1,10,7,9,"mice",
                 "ball playing","cat","male");
 
-
+        Animal secondAnimal = new Animal("Lola", 2, 10, 8,8, "Taste of the Wild Dry Dog Food",
+                "bring the ball","dog","female");
 
 
 
@@ -29,14 +34,20 @@ public class App {
 
 
 
+
+
         RecreationalActivity recreationalActivity1 = new RecreationalActivity("ball playing");
         RecreationalActivity recreationalActivity2 = new RecreationalActivity("playing with a laser");
-        RecreationalActivity recreationalActivity3 = new RecreationalActivity("walking the pet");
+        RecreationalActivity recreationalActivity3 = new RecreationalActivity("walk");
 
 
 
         Veterinarian veterinarian1 = new Veterinarian("John","Cat specialist");
         Veterinarian veterinarian2 = new Veterinarian("Samantha","Dog specialist");
+
+
+
+
 
 
 
@@ -51,6 +62,12 @@ public class App {
 
         System.out.println("Expiry date of Purina cat food is " + animalFood.expiryDate);
 
+        adopter.feeding(animal.getName(),animalFood.getName());
+        adopter.playing(animal.getName(),recreationalActivity3.getName());
+
     }
 
 }
+
+
+
