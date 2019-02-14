@@ -62,8 +62,8 @@ public class App {
 
         System.out.println("Expiry date of Purina cat food is " + animalFood.expiryDate);
 
-        adopter.feeding(animal.getName(),animalFood.getName());
-        adopter.playing(animal.getName(),recreationalActivity3.getName());
+        adopter.feeding(animal,animalFood);
+        adopter.playing(animal,recreationalActivity3);
 
     }
 
